@@ -15,10 +15,10 @@ public class RestTest {
     @BeforeClass
     public void setUp() {
         RestAssured.port = 3000;
-        RestAssured.baseURI = "http://redmine-train.dev.thumbtack.net";
+        RestAssured.baseURI = "http://";
         RequestSpecBuilder builder = new RequestSpecBuilder();
         builder.addHeader("Content-Type", "application/json");
-        builder.addHeader("X-Redmine-API-Key", "c5ee3c3e7a811a3dd4fb48469f79cc76198f87d3");
+        builder.addHeader("X-Redmine-API-Key", "c5ee3c3");
         requestSpec = builder.build();
     }
 
